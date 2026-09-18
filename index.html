@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF 工具箱 · 免费在线 PDF 处理（80+ 工具）</title>
+  <meta name="description" content="免费在线 PDF 工具箱：合并、拆分、压缩、水印、页码、旋转、删除、图片转 PDF、OCR 文字识别等 80+ 工具。全部在浏览器本地处理，不上传、不收费、无需注册。" />
+  <!-- TODO: 部署上线后把下面所有 example.com 替换成你的正式域名 -->
+  <link rel="canonical" href="https://example.com/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#1d4ed8" />
+  <meta name="author" content="PDF 工具箱" />
+  <meta name="application-name" content="PDF 工具箱" />
+  <link rel="alternate" hreflang="zh-CN" href="https://example.com/" />
+  <link rel="alternate" hreflang="en" href="https://example.com/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://example.com/" />
+
+  <!-- 图标（新图标 · 全规格） -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260813c" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=20260813c" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260813a" />
+  <link rel="manifest" href="manifest.webmanifest?v=20260813a" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PDF 工具箱" />
+  <meta property="og:title" content="PDF 工具箱 · 免费在线 PDF 处理（80+ 工具）" />
+  <meta property="og:description" content="免费在线 PDF 工具箱：合并、拆分、压缩、水印、页码、OCR 等 80+ 工具，浏览器本地处理，不上传不收费。" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/og-image.png" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PDF 工具箱 · 免费在线 PDF 处理（80+ 工具）" />
+  <meta name="twitter:description" content="免费在线 PDF 工具箱：合并、拆分、压缩、水印、页码、OCR 等 80+ 工具，浏览器本地处理。" />
+  <meta name="twitter:image" content="https://example.com/og-image.png" />
+
+  <!-- 结构化数据（富媒体搜索结果） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PDF 工具箱",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+    "description": "免费在线 PDF 工具箱：合并、拆分、压缩、水印、页码、旋转、删除、图片转 PDF、OCR 文字识别等 80+ 工具，浏览器本地处理。",
+    "url": "https://example.com/",
+    "image": "https://example.com/og-image.png",
+    "inLanguage": ["zh-CN", "en"]
+  }
+  </script>
+  <link rel="stylesheet" href="assets/beauty.css?v=20260813i" />
+  <script src="vendor/pdf-lib.min.js" defer></script>
+  <script src="vendor/pdf.min.js" defer></script>
+  <script src="vendor/tesseract/tesseract.min.js" defer></script>
+  <script src="vendor/jspdf.umd.min.js" defer></script>
+  <script src="vendor/html2canvas.min.js" defer></script>
+  <script src="assets/beauty.js?v=20260813k" defer></script>
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="logo.svg?v=20260813c" alt="logo" />
+      <span data-i18n-html="brandName">PDF<span class="grad-text">工具箱</span></span>
+    </a>
+    <div class="tf-chips" id="catChips"></div>
+    <nav class="nav-links">
+      <button class="lang-switch" id="langBtn" type="button" aria-label="切换语言">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- 首页 -->
+  <div id="homeView">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <span class="hero-blob b1"></span>
+      <span class="hero-blob b2"></span>
+      <div class="wrap hero-inner fade-in">
+        <span class="badge" data-i18n="heroBadge">100% 浏览器本地处理 · 文件不上传</span>
+        <h1 data-i18n-html="heroTitle">免费在线 <span class="grad-text">PDF 工具箱</span><br />合并 · 拆分 · 压缩 · 转换 · 加密 · OCR</h1>
+        <p class="sub" data-i18n="heroSub">覆盖合并、转换、编辑、加密与识别的 PDF 工具箱，全部在您的设备本地完成。无需注册、没有广告、不必担心隐私泄露。</p>
+        <div class="hero-search">
+          <div class="tf-search">
+            <svg class="tf-search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input id="toolSearch" type="search" autocomplete="off" placeholder="搜索工具（名称或功能）" />
+            <button id="toolSearchClear" class="tf-clear" type="button" aria-label="清除" hidden>&times;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 工具网格 -->
+    <section class="section" id="tools">
+      <div class="wrap">
+        <div class="tools-grid" id="toolsGrid"></div>
+        <div class="tf-empty" id="toolsEmpty" hidden>
+          <svg class="tf-empty-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8 11h6"/></svg>
+          <p data-i18n="noResults">没有找到匹配的工具，换个关键词试试。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性 -->
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="eyebrow" data-i18n="featEyebrow">Why PDF 工具箱</div>
+          <h2 data-i18n="featTitle">为什么选择我们</h2>
+          <p data-i18n="featSub">把隐私、速度与成本都还给您——所有处理都在浏览器内完成。</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3 data-i18n="feat1Title">隐私安全</h3>
+            <p data-i18n="feat1Desc">文件仅在您本地浏览器中处理，绝不上传服务器，敏感文档更安心。</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+            <h3 data-i18n="feat2Title">极速处理</h3>
+            <p data-i18n="feat2Desc">基于本地 WebAssembly 引擎，多页大文件也能秒级响应，不依赖网络。</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8H4v-8M2 8h20v4H2zM12 8V3M12 8s-2-5-5-4 3 4 5 4zM12 8s2-5 5-4-3 4-5 4z"/></svg></div>
+            <h3 data-i18n="feat3Title">完全免费</h3>
+            <p data-i18n="feat3Desc">全部工具免费开放，无需注册登录，也没有隐藏的功能限制。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 工具面板（动态渲染） -->
+  <div id="toolView"></div>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <div class="fbrand"><img src="logo.svg?v=20260813c" alt="logo" /> <span data-i18n-html="brandName">PDF<span class="grad-text">工具箱</span></span></div>
+        <p data-i18n="footerDesc">免费、私密、即开即用的在线 PDF 处理工具。所有文件均在您的浏览器本地完成处理，不会上传到任何服务器。</p>
+      </div>
+      <div class="flinks">
+        <a href="#tools" data-scroll="#tools" data-i18n="navAllTools">全部工具</a>
+        <a href="#features" data-scroll="#features" data-i18n="navFeatures">功能特性</a>
+        <a href="#top" data-i18n="footerTop">回到顶部</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

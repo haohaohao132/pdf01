@@ -1,0 +1,3 @@
+# Ensure JS modules (including any .mjs worker) are served with a JavaScript MIME type.
+AddType application/javascript .js
+AddType application/javascript .mjs
